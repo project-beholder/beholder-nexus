@@ -1,0 +1,3 @@
+#653EDD  main purple
+
+#4C30A1  accent dark purple
