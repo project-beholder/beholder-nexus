@@ -2,3 +2,4 @@
 .DS_STORE
 *.log
 *.swp
+*/.parcel-cache/
