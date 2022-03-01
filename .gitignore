@@ -3,4 +3,4 @@
 *.log
 *.swp
 */.parcel-cache/
-client/dist/*
+client/dist/
