@@ -1,0 +1,17 @@
+/* Inter variable form */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Fonts/Variable_Fonts_Guide */
+@font-face {
+    font-family: "inter";
+    src: url("./Inter/Inter-VariableFont_slnt\,wght.ttf") format("ttf-variations");
+}
+
+
+@font-face {
+    font-family: "inter";
+    src: url("./Inter/static/Inter-Regular.ttf");
+}
+
+/* @font-face {
+    font-family: ;
+    src: url();
+} */
