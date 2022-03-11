@@ -2,10 +2,12 @@
 
 #home-hero {
     background-image: url("../Assets/Home/HOME_overview.svg");
-    height: 100vh;
+    height: 80vh;
     max-width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
+
+    top: 0;
 }
 
 .hero-heading {
@@ -16,9 +18,9 @@
     /* left: 20px; */
     left: -400px;
     /* top: calc(50vh - 164px); */
-    top: 30vh;
+    /* top: 30vh; */
 
-    max-width: 930px;
+    /* max-width: 930px; */
     font-weight: 700;
     font-size: 128px;
     line-height: 120px;

@@ -8,11 +8,17 @@ class Assembly extends React.Component {
     render () {
         return (
             <main>
-                <Hero heading='Instructions' />
+                <Hero heading='Tinycade Assembly' />
                 <h1>Instructions</h1>
 
-                <InstructionStep num="1" />
-                <InstructionStep num="2" />
+                <article>
+                    <InstructionStep num="1" summary="summary from database" insdetail="details from database" extralink="a link to click on??" extralinkhref="the://url-to-actually-click.on" />
+                    <InstructionStep num="2" summary="Cut out the template" insdetail="What to do about multi-paragraph...?" />
+                    <InstructionStep num="3" summary="Attach the cutouts to the cardboard" insdetail="test \n test" />
+                    <InstructionStep num="4" summary="Cut out the cardboard" insdetail="stuff" />
+                    <InstructionStep num="5" summary="Assemble the mirrors" insdetail="something" />
+                </article>
+                
 
             </main>
         )

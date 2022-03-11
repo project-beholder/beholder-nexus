@@ -13,10 +13,10 @@ class Home extends React.Component {
                 <Hero heading='tiny arcade experiences on a tiny budget'/>
                 
 
-                <section id="how-it-works" class="page-section is-dark">
-                <div class="container">
+                <section id="how-it-works" className="page-section is-dark">
+                <div className="container">
                     <h2>How does tinycade work?</h2>
-                    <div class="section-items">
+                    <div className="section-items">
                     <ol>
                         <li>
                         When playing a game, your phone camera turns on.
@@ -31,18 +31,18 @@ class Home extends React.Component {
                         </li>
                     </ol>
                     <img id="x-ray-img" src={xrayview} alt="Tinycade x-ray view" />
-                    <span class="x-ray-label" id="x-ray-label-1">1 PHONE CAMERA</span>
-                    <span class="x-ray-label" id="x-ray-label-2">2 MIRROR ONE</span>
-                    <span class="x-ray-label" id="x-ray-label-3">3 CONTROLLER</span>
-                    <span class="x-ray-label" id="x-ray-label-4">2 MIRROR TWO</span>
+                    <span className="x-ray-label" id="x-ray-label-1">1 PHONE CAMERA</span>
+                    <span className="x-ray-label" id="x-ray-label-2">2 MIRROR ONE</span>
+                    <span className="x-ray-label" id="x-ray-label-3">3 CONTROLLER</span>
+                    <span className="x-ray-label" id="x-ray-label-4">2 MIRROR TWO</span>
                     </div>
                 </div>
                 </section>
 
-                <section id="how-to-build" class="page-section">
-                <div class="container">
+                <section id="how-to-build" className="page-section">
+                <div className="container">
                     <h2>How do I build a tinycade?</h2>
-                    <div class="section-items">
+                    <div className="section-items">
                     <ol>
                         <li>
                         Buy the recommended <a href="#">supplies</a>.
@@ -62,9 +62,9 @@ class Home extends React.Component {
                 </div>
                 </section>
 
-                <section id="what-to-play" class="page-section is-dark placeholder">
-                <div class="container">
-                    <h2 class="placeholder">Games and Instructions coming soon!</h2>
+                <section id="what-to-play" className="page-section is-dark placeholder">
+                <div className="container">
+                    <h2 className="placeholder">Featured game</h2>
                 </div>
                 </section>
 

@@ -8,39 +8,37 @@ import '../css/navbar.css';
 class Navbar extends React.Component {
     render() {
         return(
-            // <nav>
-            //     <a class='nav-logo-link'>
-            //         <img src={tinycadelogo} alt='Tinycade Logo' />
-            //         <span class='nav-title'>tinycade</span>
-            //     </a>
-            //     <button id='nav-toggle'>&lt; MENU</button>
-            //     <span id='nav-links'>
-            //         <a href='/'>HOME</a> // 
-            //         <a href='/assembly'>ASSEMBLY</a> //
-            //         <a href='/game-library'>GAME LIBRARY</a> //
-            //         <a href='/help'>HELP</a>
-            //     </span>
-            // </nav>
-
-            <nav>
-                <a class="nav-logo-link" href="https://www.tinycade.io">
-                    <span class="nav-logo"><img  src={tinycadelogo} alt="Tinycade Logo" /></span>
-                    <span class="nav-title">beholder</span>
+            <nav className="dark-scroll">
+                <a id='nav-logo-link' href="/">
+                    <img id="nav-logo" src={tinycadelogo} alt='Tinycade Logo' />
+                    <span id='nav-title'>beholder</span>
                 </a>
-
-                <div class="nav-menu">
-                    <button id="nav-toggle">&lt; MENU</button>
-                    <span class="nav-links">
-                    <a class="selected" href="/">HOME</a>
-                    //
-                    <a href="/assembly">ASSEMBLY</a>
-                    //
-                    <a href="/game-library">GAME LIBRARY</a>
-                    //
-                    <a href="/help">HELP</a>
-                    </span>
-                </div>
+                <span id='nav-links'>
+                    <a href='/assembly'>ASSEMBLY</a>//
+                    <a href='/game-library'>GAME LIBRARY</a>// 
+                    <a href='/help'>HELP</a>
+                </span>
             </nav>
+
+            // <nav>
+            //     <a className="nav-logo-link" href="/">
+            //         <span id="nav-logo"><img  src={tinycadelogo} alt="Tinycade Logo" /></span>
+            //         <span id="nav-title">beholder</span>
+            //     </a>
+
+            //     <div className="nav-menu">
+            //         <button id="nav-toggle">&lt; MENU</button>
+            //         <span className="nav-links">
+            //         <a className="selected" href="/">HOME</a>
+            //         //
+            //         <a href="/assembly">ASSEMBLY</a>
+            //         //
+            //         <a href="/game-library">GAME LIBRARY</a>
+            //         //
+            //         <a href="/help">HELP</a>
+            //         </span>
+            //     </div>
+            // </nav>
         )
     };
 }

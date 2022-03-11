@@ -7,7 +7,7 @@ class Help extends React.Component {
     render () {
         return (
             <main>
-                <Hero heading='Help'/>
+                <Hero heading='Help, I Lost Control'/>
                 <h1>Help Me</h1>
             </main>
         )

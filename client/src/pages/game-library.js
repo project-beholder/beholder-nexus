@@ -7,7 +7,7 @@ class GameLibrary extends React.Component {
     render () {
         return (
             <main>
-                <Hero heading='Games Library' />
+                <Hero heading='Game Library' />
                 <h1>Games</h1>
             </main>
         )
