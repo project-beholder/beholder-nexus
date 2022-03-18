@@ -1,6 +1,6 @@
 @import url('./universal.css');
 
-nav {
+#main-nav {
     /* display: block; */
     position: sticky;
     z-index: 100;
