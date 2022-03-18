@@ -1,6 +1,112 @@
 @import url('./universal.css');
 
 footer {
+    background-color: white;
+    color: black;
+
+    border-top: 3px solid var(--tinycade-purple);
+    min-height: 400px;
+    
+    /* width:  */
+    /* max-width: 60%; */
+    margin: 0 auto;
+    padding: 20px;
+
+
+    display: grid;
+    grid-template-columns:
+        0.6fr 1fr 1fr 1fr 0.6fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        ". fmenu fcontrib flogos .";
+}
+
+footer a {
+    color: black;
+}
+
+footer h3 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2em;
+}
+
+footer > nav {
+    grid-area: fmenu;
+}
+
+footer ul > li {
+    list-style: none;
+}
+
+footer #footer-contributors {
+    grid-area: fcontrib;
+}
+
+#footer-contributors > ul {
+    column-count: 2;
+    column-width: 48%;
+}
+
+footer #footer-logos {
+    grid-area: flogos;
+}
+
+#footer-logo-block {
+    display: grid;
+    width: 100%;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "acme atlas" "ucb ucb";
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+footer figure {
+  margin: 0;
+  padding: auto;
+
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+#footer-logos .logo-container {
+  border: 3px solid black;
+  padding: auto 2%;
+
+  width: 100%;
+  height: 100%;
+}
+
+.logo-container img {
+  max-width: 95%;
+}
+
+#acmelogo {
+    grid-area: acme;
+}
+#atlaslogo {
+    grid-area: atlas;
+}
+#ucblogo {
+    grid-area: ucb;
+}
+
+@media only screen and (max-device-width: 320px) {
+    footer {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: "fmenu" "fcontrib" "flogos";
+    }
+}
+
+
+
+
+/* ///////////////////////////////////// */
+/* footer {
     background-color: #ffffff;
     border-top: 3px solid var(--tinycade-purple);
     color: black;
@@ -10,18 +116,7 @@ footer {
     align-items: stretch;
     justify-content: space-between;
   }
-  
-  footer a {
-    color: #000000;
-  }
-  
-  /* #footer-content {
-    display: flex;
-    align-items: stretch;
-    justify-content: space-between;
-    /* column-width: 30%;
-  } */
-  
+
   .footer-link {
     font-family: Space Mono;
     font-style: normal;
@@ -68,10 +163,10 @@ footer {
   }
   
   .footer-logo {
-    /* background: #fff; */
+    /* background: #fff;
     width: 60px;
     margin-right: 15px;
-    /* vertical-align: top; */
+    /* vertical-align: top;
   }
   
   .footer-logo > img {
@@ -88,4 +183,4 @@ footer {
     line-height: 36px;
     color: #000000;
     display: block;
-  }
+  } */

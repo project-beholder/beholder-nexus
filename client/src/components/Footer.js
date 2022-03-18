@@ -11,81 +11,61 @@ import '../css/footer.css';
 class Footer extends React.Component {
     render() {
         return (
-            // <footer>
-            //     <nav id='footer-nav'>
-            //         <a className='footer-logo-link' href='https://www.tinycade.io'>
-            //             <img className='footer-logo' alt='Tinycade Logo' src={tinycadelogo} />
-            //         </a>
+            <footer>
+                <nav id='footer-nav'>
+                    <h3><a className='footer-logo-link' href='/'>
+                        <img className='footer-logo' alt='Tinycade Logo' src={tinycadelogo} />
+                        Beholder
+                    </a></h3>
 
-            //         <a className="footer-menu-link" href="/">Home //</a>
-            //         <a className="footer-menu-link" href="/assembly">Assembly //</a>
-            //         <a className="footer-menu-link" href="/game-library">Game Library //</a>
-            //         <a className="footer-menu-link" href="/help">Help //</a>
-            //     </nav>
+                    <ul>
+                        <li><a className='footer-menu-link' href='/'>Home</a> //</li>
+                        <li><a className='footer-menu-link' href='/assembly'>Assembly</a> //</li>
+                        <li><a className='footer-menu-link' href='/game-library'>Game Library</a> //</li>
+                        <li><a className='footer-menu-link' href='/help'>Help</a> //</li>
+                    </ul>
+                </nav>
 
-            //     <section id='footer-contributors'>
-            //         <h3>Contributors</h3>
-            //         <a className='footer-link' href='https://petroochio.github.io' target='_blank'>Peter Gyory</a>
-            //         <a className='footer-link' href='https://clementzheng.info/' target='_blank'>Clement Zheng</a>
-            //         <a className='footer-link' href='#' target='_blank'>Dylan Turner</a>
-            //         <a className='footer-link' href='#' target='_blank'>Perry Owens</a>
-            //         <a className='footer-link' href='https://www.colorado.edu/atlas/ellen-yi-luen-do' target='_blank'>Ellen Do</a>
-            //         <a className='footer-link' href='#' target='_blank'>Allison Palmer</a>
-            //         <a className='footer-link' href='#' target='_blank'>Rhys Ruefort</a>
-            //     </section>
+                <section id='footer-contributors'>
+                    <h3>Contributors</h3>
 
-            //     <section id='footer-logos'>
-            //         <h3><a className='underline' href='https://github.com/Tinycade/tinycade-homepage/blob/main/LICENSE'>read license</a></h3>
+                    <ul>
+                        <li><a className='footer-link' href='https://petroochio.github.io' target='_blank'>Peter Gyory</a></li>
+                        <li><a className='footer-link' href='https://clementzheng.info/' target='_blank'>Clement Zheng</a></li>
+                        <li><a className='footer-link' href='#' target='_blank'>Dylan Turner</a></li>
+                        <li><a className='footer-link' href='#' target='_blank'>Perry Owens</a></li>
+                        <li><a className='footer-link' href='https://www.colorado.edu/atlas/ellen-yi-luen-do' target='_blank'>Ellen Do</a></li>
+                        <li><a className='footer-link' href='#' target='_blank'>Allison Palmer</a></li>
+                        <li><a className='footer-link' href='#' target='_blank'>Rhys Ruefort</a></li>
+                    </ul>
+                    
+                </section>
 
-            //         <div id='footer-logo-block'>
-            //             <a href="https://www.colorado.edu/atlas/acme-lab">
-            //                 <img src={acmelogo} alt="ACME Lab Logo" />
-            //             </a>
-            //             <a href="https://www.colorado.edu/atlas/">
-            //                 <img className="atlas-brand" src={atlaslogo} alt="ATLAS Institute Logo" />
-            //             </a>
-            //             <a className="cu-brand" href="https://www.colorado.edu">
-            //                 <img src={culogo} alt="University of Colorado Boulder Logo" />
-            //             </a>
-            //         </div>
-            //     </section>
+                <section id='footer-logos'>
+                    <h3><a className='underline' href='https://github.com/Tinycade/tinycade-homepage/blob/main/LICENSE'>read license</a></h3>
 
-            // </footer>
+                    <div id='footer-logo-block'>
+                        <figure id="acmelogo" className='logo-container'>
+                            <a href="https://www.colorado.edu/atlas/acme-lab">
+                                <img src={acmelogo} alt="ACME Lab Logo" />
+                            </a>
+                        </figure>
 
-            <footer id="footer">
-                <div id="footer-content"className="container">
-                    <div id="footer-menus">
-                    <a className="footer-logo-link" href="https://www.tinycade.io">
-                        <img className="footer-logo" src={tinycadelogo} alt="Tinycade Logo" />
-                        <span className="footer-title">beholder</span>
-                    </a>
-
-                    <a className="footer-menu-link" href="/">Home //</a>
-                    <a className="footer-menu-link" href="/assembly">Assembly //</a>
-                    <a className="footer-menu-link" href="/game-library">Game Library //</a>
-                    <a className="footer-menu-link" href="/help">Help //</a>
+                        <figure id="atlaslogo" className='logo-container'>
+                            <a href="https://www.colorado.edu/atlas/">
+                                <img className="atlas-brand" src={atlaslogo} alt="ATLAS Institute Logo" />
+                            </a>
+                        </figure>
+                        
+                        <figure id="ucblogo" className='logo-container'>
+                            <a className="cu-brand" href="https://www.colorado.edu" id="ucblogo">
+                                <img src={culogo} alt="University of Colorado Boulder Logo" />
+                            </a>
+                        </figure>
+                        
                     </div>
-                    <div id="footer-contributors">
-                        <h3>Contributors</h3>
-                        <div className="footer-names-cols">
-                            <a className="footer-link" href="https://petroochio.github.io">Peter Gyory</a>
-                            <a className="footer-link" href="https://clementzheng.info/">Clement Zheng</a>
-                            <a className="footer-link" href="#">Dylan Turner</a>
-                            <a className="footer-link" href="#">Perry Owens</a>
-                            <a className="footer-link" href="https://www.colorado.edu/atlas/ellen-yi-luen-do">Ellen Do</a>
-                            <a className="footer-link" href="#">Allison Palmer</a>
-                            <a className="footer-link" href="#">Rhys Ruefort</a>
-                        </div>
-                    </div>
-                    <div id="footer-logos">
-                    <h3><a className="underline" href="https://github.com/Tinycade/tinycade-homepage/blob/main/LICENSE">read license</a></h3>
-                    <div className="logo-block">
-                        <a href="https://www.colorado.edu/atlas/acme-lab"><img src={acmelogo} alt="ACME Lab Logo" /></a>
-                        <a href="https://www.colorado.edu/atlas/"><img className="atlas-brand" src={atlaslogo} alt="ATLAS Institute Logo" /></a>
-                        <a className="cu-brand" href="https://www.colorado.edu"><img src={culogo} alt="University of Colorado Boulder Logo" /></a>
-                    </div>
-                    </div>
-                </div>
+                </section>
+
             </footer>
         )
     };
