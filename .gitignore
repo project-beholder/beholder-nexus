@@ -4,3 +4,4 @@
 *.swp
 */.parcel-cache/
 client/dist/
+old_cliennt/*
