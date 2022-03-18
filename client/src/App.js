@@ -19,7 +19,7 @@ export function App() {
 			<Navbar />
 
 			<Routes>
-				<Route exact path='/' exact element={ <Home /> } />
+				<Route exact path='/' element={ <Home /> } />
 				<Route path='/assembly' element={ <Assembly /> } />
 				<Route path='/game-library' element={ <GameLibrary /> } />
 				<Route path='/help' element={ <Help /> } />
