@@ -1,0 +1,55 @@
+.home-section {
+    padding: 2em 4em;
+
+    display: grid;
+
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas:
+        "sheader graphic"
+        "steplist graphic";
+}
+
+.home-section:nth-of-type(even) {
+    background-color: black;
+    color: white;
+}
+
+.home-section h2 {
+    grid-area: sheader;
+    width: 7em;
+}
+
+.home-section ol {
+    grid-area: steplist;
+    font-family: "Inter";
+}
+
+.home-section ol li::marker {
+    display: block;
+    font-size: 1.5em;
+}
+
+.home-section a:link {
+    text-decoration: underline;
+}
+
+.home-section figure {
+    grid-area: graphic;
+}
+
+.home-section img {
+    width: 100%;
+}
+
+.x-ray-label {
+    position: absolute;
+    color: #fff;
+    font-size: 36px;
+    white-space: nowrap;
+}
+
+#x-ray-label-1 { bottom: 440px; left: 870px; }
+#x-ray-label-2 { bottom: 345px; left: 770px; }
+#x-ray-label-3 { bottom: 205px; left: 955px; }
+#x-ray-label-4 { bottom: 85px; left: 915px; }

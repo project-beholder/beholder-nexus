@@ -3,31 +3,50 @@
 #home-hero {
     background-image: url("../Assets/Home/HOME_overview.svg");
     height: 80vh;
-    max-width: 100%;
+    max-width: 100vw;
     background-repeat: no-repeat;
     background-size: cover;
 
-    top: 0;
+    display: grid;
+    grid-template-rows: 9fr 1fr;
+    grid-template-areas: "titular" "scroller";
+}
+
+#home-hero::before {
+    display: block;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    opacity: 0.6;
+}
+
+#hero-container {
+    grid-area: titular;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'hheading hmodel';
 }
 
 .hero-heading {
-    /* top: calc(50vh - 260px); */
-    /* max-width: 60vw; */
     z-index: 11;
-    position: absolute;
-    /* left: 20px; */
-    left: -400px;
-    /* top: calc(50vh - 164px); */
-    /* top: 30vh; */
+    margin-top: 0;
 
-    /* max-width: 930px; */
+    grid-area: hheading;
+    /* display: inline-block; */
+
     font-weight: 700;
-    font-size: 128px;
-    line-height: 120px;
-    color: #ffffff;
+    font-size: 4rem;
+    line-height: 1em;
+    color: var(--tinycade-purple);
     -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #653EDD;
-    /* line-height: 111px; */
+    -webkit-text-stroke-color: var(--tinycade-purple);
+
+    max-width: 8em;
+    margin-left: 8%;
+    padding-top: 8%;
+
+    margin-right: 0;
 
     transition: color 700ms ease-in-out,
         -webkit-text-stroke-color 700ms ease-in-out;
@@ -45,52 +64,26 @@
 }
 
 .hero-model {
-    position: absolute;
-    right: -11vw;
-    top: 8vw;
-    width: 70%;
+    max-width: 100%;
+    height: auto;
     z-index: 10;
+
+    margin: 10% 6%;
+
+    /* display: inline-block; */
+    grid-area: hmodel;
 }
 
 #hero-scroll-prompt {
-    position: absolute;
-    bottom: 32px;
-    right: 20px;
+    grid-area: scroller;
 
-    font-family: Space Mono;
-    font-style: normal;
+    margin-right: 20px;
+    font-size: 1.3rem;
     font-weight: bold;
-    font-size: 24px;
-    line-height: 26px;
-    width: 216px;
     text-align: right;
-    color: #000;
-}
+    color: black;
+    z-index: 12;
+    width: 10em;
 
-#how-it-works {
-
-}
-
-#x-ray-img {
-    position: absolute;
-    right: -64px;
-    bottom: 0;
-}
-
-.x-ray-label {
-    position: absolute;
-    color: #fff;
-    font-size: 36px;
-    white-space: nowrap;
-}
-
-#x-ray-label-1 { bottom: 440px; left: 870px; }
-#x-ray-label-2 { bottom: 345px; left: 770px; }
-#x-ray-label-3 { bottom: 205px; left: 955px; }
-#x-ray-label-4 { bottom: 85px; left: 915px; }
-
-#exploded-img {
-    position: absolute;
-    right: -130px;
-    bottom: -50px;
+    justify-self: right;
 }

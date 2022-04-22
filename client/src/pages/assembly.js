@@ -2,6 +2,7 @@ import React from 'react';
 
 /* Components */
 import Hero from '../components/Hero.js';
+import ToolsSupplies from '../components/ToolsSupplies.js';
 import InstructionStep from '../components/InstructionStep.js';
 
 class Assembly extends React.Component {
@@ -9,9 +10,10 @@ class Assembly extends React.Component {
         return (
             <main>
                 <Hero heading='Tinycade Assembly' />
-                <h1>Instructions</h1>
+                {/* <h1>Instructions</h1> */}
 
                 <article>
+                    <h2>Steps</h2>
                     <InstructionStep num="1" summary="summary from database" insdetail="details from database" extralink="a link to click on??" extralinkhref="the://url-to-actually-click.on" />
                     <InstructionStep num="2" summary="Cut out the template" insdetail="What to do about multi-paragraph...?" />
                     <InstructionStep num="3" summary="Attach the cutouts to the cardboard" insdetail="test \n test" />

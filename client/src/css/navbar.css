@@ -1,9 +1,9 @@
 @import url('./universal.css');
 
 #main-nav {
-    /* display: block; */
     position: sticky;
     z-index: 100;
+    top: 0;
 
     overflow: hidden;
 
@@ -14,7 +14,7 @@
     transition: background-color 300ms ease-in-out;
     color: white;
 
-    font-size: 2.4rem;
+    font-size: 1.6rem;
 
     display: flex;
     flex-direction: row;
@@ -33,13 +33,12 @@
 }
 
 #nav-logo {
-    background-color: black;
+    /* background-color: black; */
 
     padding: 0.6rem;
 
-    height: 3.5rem;
+    height: 1.6rem;
 
-    margin-right: 1rem;
     margin-left: 1rem;
 }
 
@@ -59,7 +58,6 @@
     font-size: inherit;
 
     padding: 0.3rem 1rem;
-    padding-right: 60px;
 
     /* align-self: flex-end; */
 
@@ -69,8 +67,7 @@
     color: white;
     font-size: inherit;
     font-style: italic;
-    margin-right: 2rem;
-    margin-left: 2rem;
+    margin: auto 1.2rem;
 }
 
 #nav-links > a:hover {
@@ -84,29 +81,9 @@ nav > .activepage {
 
 nav.dark-scroll {
     background-color: black;
-    border-bottom: 3px solid white;
-    position: sticky;
-    top: 0;
-
-    transition: background-color 300ms ease-in-out;
+    border-bottom: solid white 3px;
 }
-
 nav.dark-scroll > #nav-logo-link > #nav-title,
 nav.dark-scroll > #nav-links {
     background-color: black;
 }
-
-/* ///////////////////////////////// */
-/* 
-  .is-dark > .nav-menu > #nav-toggle,
-  .is-dark > .nav-menu > .nav-links,
-  .is-dark > .nav-logo-link > .nav-title {
-    background-color: #000000;
-  }
-  
-  nav.is-dark {
-    background-color: #000000;
-    border-bottom: 3px solid #ffffff;
-    position: fixed;
-    top: 0;
-  } */

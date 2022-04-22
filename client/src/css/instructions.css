@@ -7,19 +7,27 @@ main > article {
     padding: 1em 2em;
 
     display: grid;
-    grid-template-columns: 60% auto;
+    grid-template-columns: 20% 40% 20% 20%;
 }
 
 .instruction-step:nth-of-type(odd) {
     background-color: #a4a4a4;
 }
 
+.instruction-step > h3 {
+    grid-column-start: 2;
+    max-width: 60%;
+}
+
 .instruction-step > p {
-    grid-column-start: 1;
+    grid-column-start: 2;
     max-width: 45%;
 }
 
 .instruction-img {
     width: 300px;
-    grid-column-start: 2;
+    grid-column-start: 3;
+
+    grid-row-start: 1;
+    grid-row-end: 4;
 }

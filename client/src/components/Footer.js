@@ -15,7 +15,7 @@ class Footer extends React.Component {
                 <nav id='footer-nav'>
                     <h3><a className='footer-logo-link' href='/'>
                         <img className='footer-logo' alt='Tinycade Logo' src={tinycadelogo} />
-                        Beholder
+                        Tinycade
                     </a></h3>
 
                     <ul>

@@ -10,20 +10,13 @@ import '../css/hero.css';
 class Hero extends React.Component {
     render () {
         return (
-            // <header id='home-hero'>
-            //     <h1>Tiny arcade experiences on a tiny budget.</h1>
-            //     <img className='hero-model' alt='Tinycade 3D Render' src={tcmodel} />
-            //     <p id='hero-scroll-prompt'>SCROLL DOWN TO LEARN MORE</p>
-            // </header>
 
             <section id="home-hero">
-                <div className="container">
+                <div id="hero-container">
                     <h1 className="hero-heading">{this.props.heading}</h1>
-
                     <img className="hero-model" src={tcmodel} alt="Tinycade 3D Render" />
-
                 </div>
-                {/* <p id="hero-scroll-prompt">SCROLL DOWN TO LEARN MORE</p> */}
+                <p id="hero-scroll-prompt">SCROLL DOWN TO LEARN MORE</p>
             </section>
         )
     };
