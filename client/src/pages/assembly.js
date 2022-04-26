@@ -6,11 +6,25 @@ import ToolsSupplies from '../components/ToolsSupplies.js';
 import InstructionStep from '../components/InstructionStep.js';
 
 class Assembly extends React.Component {
+    // componentDidMount () {
+    //     const navLinks = document.getElementsByClassName("nav-link-selectable");
+    //     console.log(navLinks);
+    //     for (el=0; el<navLinks.length; el++) {
+    //         if (navLinks(el).classList.contains('activepage')) {
+    //             navLinks(el).classList.remove('activepage');
+    //             break;
+    //         }
+    //     }
+    //     document.getElementById('nav-assembly').classList.add('activepage');
+    // }
+
     render () {
         return (
             <main>
                 <Hero heading='Tinycade Assembly' />
-                {/* <h1>Instructions</h1> */}
+                
+                <ToolsSupplies type="Supplies" />
+                <ToolsSupplies type="Tools" />
 
                 <article>
                     <h2>Steps</h2>

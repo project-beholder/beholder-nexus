@@ -10,7 +10,6 @@
     width: 100vw;
     min-height: 56px;
 
-    /* background-color: transparent; */
     transition: background-color 300ms ease-in-out;
     color: white;
 
@@ -30,16 +29,15 @@
     justify-content: space-between;
 
     font-size: inherit;
+
+    background-color: var(--tinycade-purple);
 }
 
 #nav-logo {
-    /* background-color: black; */
-
     padding: 0.6rem;
-
-    height: 1.6rem;
-
     margin-left: 1rem;
+
+    height: 1.6rem;    
 }
 
 #nav-title {
@@ -50,7 +48,6 @@
     font-weight: 700;
 
     padding: 0.6rem 1rem;
-
 }
 
 #nav-links {
@@ -58,9 +55,6 @@
     font-size: inherit;
 
     padding: 0.3rem 1rem;
-
-    /* align-self: flex-end; */
-
 }
 
 #nav-links > a {
@@ -83,6 +77,7 @@ nav.dark-scroll {
     background-color: black;
     border-bottom: solid white 3px;
 }
+nav.dark-scroll > #nav-logo-link,
 nav.dark-scroll > #nav-logo-link > #nav-title,
 nav.dark-scroll > #nav-links {
     background-color: black;

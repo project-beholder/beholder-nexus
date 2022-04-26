@@ -1,5 +1,6 @@
-// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { HashRouter as Router, Routes, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// import { HashRouter as Router, Routes, Route} from 'react-router-dom';
+import { useEffect, useState } from 'react';
 
 /* Components */
 import Navbar from './components/Navbar.js';
@@ -14,21 +15,7 @@ import Help from './pages/help.js';
 /* CSS */
 import './css/universal.css';
 
-// export const App = () => (
-// 	<HashRouter>
-// 		<Navbar />
-
-// 		<Routes>
-// 			<Route exact path='/' component={ <Home/> } />
-// 		</Routes>
-
-// 		<Footer />
-// 	</HashRouter>
-// )
-
-
-
-export function App() {
+export function App() {	
     return (
 		<Router>
 			<Navbar />

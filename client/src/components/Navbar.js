@@ -8,21 +8,38 @@ import '../css/navbar.css';
 import Scrolling from '../js/navbar';
 
 class Navbar extends React.Component {
+    state = {
+        scrollPos: 0,
+    };
 
-    // componentDidMount() {
-    //     var loadScript = function(src) {
-    //         let e = document.createElement('script');
-    //         e.type = 'text/javascript';
-    //         e.src = src;
-    //         e.async = false;
-    //         e.defer = true;
-    //         document.getElementsByTagName('head')[0].appendChild(e);
-    //     }
+    componentDidMount() {
+        document.addEventListener('scroll', (e)=> { 
+   
+            this.setState({ scrollPos: window.scrollY });
+        });
+    }
 
-    //     loadScript("../js/navbar.js");
-    // }
+    componentDidUpdate() {
+        const navbar = document.getElementById('main-nav');
+        if (this.state.scrollPos > 50) {
+            if (!navbar.classList.contains('dark-scroll')){
+                navbar.classList.add('dark-scroll');
+            }
+        }
+        else {
+            if (navbar.classList.contains('dark-scroll')) {
+                navbar.classList.remove('dark-scroll');
+            }
+        }
+    }
+
+    componentWillUnmount() {
+        document.removeEventListener('scroll');
+    }
 
     render() {
+        // console.log(this.state.scrollPos);
+
         return(
             <nav id="main-nav">
                 <a id="nav-logo-link" href="/">
@@ -30,9 +47,9 @@ class Navbar extends React.Component {
                     <span id="nav-title">tinycade</span>
                 </a>
                 <span id="nav-links">
-                    <a href="/assembly">ASSEMBLY</a>//
-                    <a href="/game-library">GAME LIBRARY</a>// 
-                    <a href="/help">HELP</a>
+                    <a href="/assembly" id="nav-assembly" className="nav-link-selectable">ASSEMBLY</a>//
+                    <a href="/game-library" id="nav-games" className="nav-link-selectable">GAME LIBRARY</a>// 
+                    <a href="/help" id="nav-help" className="nav-link-selectable">HELP</a>
                 </span>
 
             </nav>
