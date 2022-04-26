@@ -15,14 +15,18 @@ footer {
 
     display: grid;
     grid-template-columns:
-        2fr 1fr 1fr 1fr 2fr;
+        2fr 1fr 1.5fr 1fr 2fr;
     grid-template-rows: auto;
     grid-template-areas:
         ". fmenu fcontrib flogos .";
+    column-gap: 2rem;
 }
 
 footer a {
     color: black;
+}
+footer a:hover {
+    text-decoration: underline;
 }
 
 footer h3 {
@@ -75,7 +79,7 @@ footer figure {
 }
 
 #footer-logos .logo-container {
-    border: 3px solid black;
+    border: 1px solid black;
     padding: auto 2%;
 
     width: 100%;
