@@ -11,7 +11,9 @@ class InstructionStep extends React.Component {
             <section className='instruction-step'> 
                 <h3>Step { this.props.num }: {this.props.summary }</h3>
                 <p>{ this.props.insdetail }</p>
-                <p><a href={this.props.extralinkhref}>{this.props.extralink}</a></p>
+                {this.props.extralink != '' ? <p><a href={this.props.extralink}>Referenced link</a></p> : null}
+
+                {/* <img className='instruction-img' src={this.props.insimg} alt='placeholder image' /> */}
                 <img className='instruction-img' src={placeholder} alt='placeholder image' />
             </section>
         )

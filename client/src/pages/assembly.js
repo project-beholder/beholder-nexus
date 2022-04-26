@@ -5,34 +5,35 @@ import Hero from '../components/Hero.js';
 import ToolsSupplies from '../components/ToolsSupplies.js';
 import InstructionStep from '../components/InstructionStep.js';
 
+import Tinycade from '../../../server/content/tinycade.json';
+
+import pieces from '../assets/pictorial2-assembly.jpg';
+
 class Assembly extends React.Component {
-    // componentDidMount () {
-    //     const navLinks = document.getElementsByClassName("nav-link-selectable");
-    //     console.log(navLinks);
-    //     for (el=0; el<navLinks.length; el++) {
-    //         if (navLinks(el).classList.contains('activepage')) {
-    //             navLinks(el).classList.remove('activepage');
-    //             break;
-    //         }
-    //     }
-    //     document.getElementById('nav-assembly').classList.add('activepage');
-    // }
+    state = {
+        tc: Tinycade,
+    };
+
+    componentDidMount () {
+        document.getElementById('nav-assembly').classList.add('activepage');
+    }
 
     render () {
+        console.log((this.state.tc.steps)[0].num);
         return (
             <main>
-                <Hero heading='Tinycade Assembly' />
+                <Hero herosrc={pieces} heading='Tinycade Assembly' />
                 
                 <ToolsSupplies type="Supplies" />
                 <ToolsSupplies type="Tools" />
 
                 <article>
                     <h2>Steps</h2>
-                    <InstructionStep num="1" summary="summary from database" insdetail="details from database" extralink="a link to click on??" extralinkhref="the://url-to-actually-click.on" />
-                    <InstructionStep num="2" summary="Cut out the template" insdetail="What to do about multi-paragraph...?" />
-                    <InstructionStep num="3" summary="Attach the cutouts to the cardboard" insdetail="test \n test" />
-                    <InstructionStep num="4" summary="Cut out the cardboard" insdetail="stuff" />
-                    <InstructionStep num="5" summary="Assemble the mirrors" insdetail="something" />
+
+                    {this.state.tc.steps.map(step => (
+                        <InstructionStep num={step.num} summary={step.summary} insdetail={step.detail} insimg={step.image} extralink={step.link} />
+                    ))}
+
                 </article>
                 
 

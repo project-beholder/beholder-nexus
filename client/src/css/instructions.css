@@ -1,13 +1,11 @@
-main > article {
-    
-}
+@import url('./universal.css');
 
 .instruction-step {
     background-color: white;
-    padding: 1em 2em;
+    padding: 1rem 2em;
 
     display: grid;
-    grid-template-columns: 20% 40% 20% 20%;
+    grid-template-columns: 1fr 40% 20% 1fr;
 }
 
 .instruction-step:nth-of-type(odd) {
@@ -21,7 +19,9 @@ main > article {
 
 .instruction-step > p {
     grid-column-start: 2;
-    max-width: 45%;
+    max-width: 85%;
+
+    font-family: 'Inter', sans-serif;
 }
 
 .instruction-img {
@@ -30,4 +30,52 @@ main > article {
 
     grid-row-start: 1;
     grid-row-end: 4;
+}
+
+/* Components of Instructions page */
+/* ts = tools/supplies */
+
+.ts-section {
+    columns: 2;
+}
+
+.ts-item {
+    width: 30%;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 'itimg itdesc' 'itimg itlink';
+}
+
+.ts-item summary {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.ts-item summary::marker {
+    display: none;
+}
+
+.ts-item summary:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.ts-item img {
+    max-width: 30%;
+    
+    grid-area: itimg;
+}
+
+.ts-item > p {
+    font-family: 'Inter', sans-serif;
+    grid-area: itdesc;
+
+    display: inline-block;
+}
+
+.ts-item > a {
+    font-family: 'Inter', sans-serif;
+    grid-area: itlink;
 }
