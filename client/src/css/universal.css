@@ -36,6 +36,7 @@ video {
     height: auto;
     max-width: 100vw;
     max-height: 100vh;
+    object-fit: contain;
 }
 
 h2::before {
@@ -49,6 +50,14 @@ h2::before {
 
 h2:nth-of-type(odd)::before {
   background: white;
+}
+
+h2 {
+    padding-top: 3rem;
+}
+
+section {
+    padding-left: 3rem;
 }
 
 a:link .primary,
