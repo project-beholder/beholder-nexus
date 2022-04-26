@@ -7,12 +7,13 @@ import '../css/landing.css';
 
 import xrayview from '../assets/home/tinycade_x_ray.png';
 import explodedview from '../assets/home/tinycade_exploded.png';
+import homehero from '../assets/home/HOME_overview.svg';
 
 class Home extends React.Component {
     render () {
         return (
             <main>
-                <Hero heading='tiny arcade experiences on a tiny budget'/>
+                <Hero herosrc={homehero} heading='tiny arcade experiences on a tiny budget'/>
                 
                 <section id='how-it-works' className='home-section'>
                     <h2>How does tinycade work?</h2>
