@@ -1,23 +1,22 @@
 import React from 'react';
-
-/* media */
-import tcmodel from '../assets/home/tc_model_1.png';
+import { useLocation } from 'react-router-dom';
 
 import '../css/hero.css';
 
-// reference {this.props.children}
+import tcmodel from '../assets/home/tc_model_1.png';
 
 class Hero extends React.Component {
     render () {
         return (
-
-            <section id="home-hero">
+            <header id="home-hero" style={{backgroundImage:`url(${this.props.herosrc})`}}>
                 <div id="hero-container">
                     <h1 className="hero-heading">{this.props.heading}</h1>
-                    <img className="hero-model" src={tcmodel} alt="Tinycade 3D Render" />
+
+                    {location.pathname=='/' ? <img className="hero-model" src={tcmodel} alt="Tinycade 3D Render" /> : null}
+
                 </div>
-                <p id="hero-scroll-prompt">SCROLL DOWN TO LEARN MORE</p>
-            </section>
+                {location.pathname=='/' ? <p id="hero-scroll-prompt">SCROLL DOWN TO LEARN MORE</p> : null}
+            </header>
         )
     };
 }

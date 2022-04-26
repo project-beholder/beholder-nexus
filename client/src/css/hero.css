@@ -1,14 +1,14 @@
 @import url('./universal.css');
 
 #home-hero {
-    background-image: url("../Assets/Home/HOME_overview.svg");
     height: 80vh;
-    max-width: 100vw;
+    width: 100vw;
+    
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 
     display: grid;
-    grid-template-rows: 9fr 1fr;
     grid-template-areas: "titular" "scroller";
 }
 
@@ -23,23 +23,21 @@
 #hero-container {
     grid-area: titular;
 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 'hheading hmodel';
+    max-height: 90%;
 }
 
 .hero-heading {
-    z-index: 11;
+    z-index: 12;
     margin-top: 0;
+    position: relative;
 
     grid-area: hheading;
-    /* display: inline-block; */
 
     font-weight: 700;
-    font-size: 4rem;
+    font-size: 5rem;
     line-height: 1em;
-    color: var(--tinycade-purple);
-    -webkit-text-stroke-width: 2px;
+    color: white;
+    -webkit-text-stroke-width: 4px;
     -webkit-text-stroke-color: var(--tinycade-purple);
 
     max-width: 8em;
@@ -47,9 +45,6 @@
     padding-top: 8%;
 
     margin-right: 0;
-
-    transition: color 700ms ease-in-out,
-        -webkit-text-stroke-color 700ms ease-in-out;
 }
 
 .is-fade {
@@ -65,19 +60,20 @@
 
 .hero-model {
     max-width: 100%;
-    height: auto;
-    z-index: 10;
+    width: 700px;   
+    z-index: 8;
 
-    margin: 10% 6%;
+    position: absolute;
+    right: 0.1vw;
+    top: 5vh;
 
-    /* display: inline-block; */
-    grid-area: hmodel;
+    margin-left: 5%;
 }
 
 #hero-scroll-prompt {
     grid-area: scroller;
 
-    margin-right: 20px;
+    margin-right: 40px;
     font-size: 1.3rem;
     font-weight: bold;
     text-align: right;
@@ -86,4 +82,5 @@
     width: 10em;
 
     justify-self: right;
+    align-self: end;
 }
