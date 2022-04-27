@@ -19,13 +19,14 @@ class Assembly extends React.Component {
     }
 
     render () {
-        console.log((this.state.tc.steps)[0].num);
+        // console.log((this.state.tc.steps)[0].num);
         return (
             <main>
                 <Hero herosrc={pieces} heading='Tinycade Assembly' />
                 
-                <ToolsSupplies type="Supplies" />
-                <ToolsSupplies type="Tools" />
+                {/* send specific tools/supplies as props data */}
+                <ToolsSupplies type="Supplies" list={this.state.tc.supplies} />
+                <ToolsSupplies type="Tools" list={this.state.tc.tools} />
 
                 <article>
                     <h2>Steps</h2>

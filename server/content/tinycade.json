@@ -3,7 +3,7 @@
     "supplies": [
         {
             "item": "cardboard",
-            "description": "",
+            "description": "test - cardboard",
             "image": "",
             "buylink": ""
         },
@@ -29,7 +29,7 @@
         },
         {
             "item": "exact-o knife",
-            "description": "",
+            "description": "A knife for cutting cardboard in a straight line",
             "image": "",
             "buylink": ""
         },

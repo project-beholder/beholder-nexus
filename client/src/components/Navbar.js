@@ -4,8 +4,6 @@ import React from 'react';
 import tinycadelogo from '../assets/tinycade_logo.svg';
 
 import '../css/navbar.css';
-// import '../js/navbar.js';
-import Scrolling from '../js/navbar';
 
 class Navbar extends React.Component {
     state = {
