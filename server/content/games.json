@@ -4,7 +4,30 @@
         "url": "",
         "summary": "",
         "image": "",
-        "controls": "",
+        "controls": [
+            "path/to/control/icon",
+            "path/to/other/control/icon"
+        ],
+        "controller": "link.to/controller/assembly"
+    },
+    {
+        "title": "",
+        "url": "",
+        "summary": "",
+        "image": "",
+        "controls": [
+            ""
+        ],
+        "controller": ""
+    },
+    {
+        "title": "",
+        "url": "",
+        "summary": "",
+        "image": "",
+        "controls": [
+            ""
+        ],
         "controller": ""
     }
 ]
