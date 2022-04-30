@@ -1,0 +1,639 @@
+@import "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap";
+/* https://www.figma.com/file/lHLx6DIUqjd9yDrMOx1efR/Website-src?node-id=301%3A179 */
+
+/* typefaces */
+
+html,
+:root {
+    --tinycade-purple: #653EDD; /* rgb(101, 62, 221) */
+    --tinycade-grey: #DBDBDB;
+
+    font-size: 18px;
+}
+
+* {
+    font-family: 'Space Mono', monospace;
+
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+
+    width: 100vw;
+    height: 100vh;
+
+    padding: 0;
+    margin: 0;
+}
+
+figure,
+img,
+video {
+    width: auto;
+    height: auto;
+    max-width: 100vw;
+    max-height: 100vh;
+    object-fit: contain;
+}
+
+h2::before {
+  display: block;
+  width: 6.5rem;
+  height: 0.6rem;
+  top: -2rem;
+  content: "";
+  background: var(--tinycade-purple);
+}
+
+h2:nth-of-type(odd)::before {
+  background: white;
+}
+
+h2 {
+    padding-top: 3rem;
+}
+
+section {
+    padding-left: 3rem;
+}
+
+a:link .primary,
+a:link .secondary {
+    text-decoration: none;
+}
+
+a:link .inline {
+    text-decoration: underline;
+}
+
+a:visited .primary,
+a:visited .secondary {
+    text-decoration: none;
+}
+
+a:visited .inline {
+    text-decoration: underline;
+}
+
+a:hover .primary,
+a:hover .secondary,
+a:hover .inline {
+    text-decoration: underline;
+}
+
+a:active .primary,
+a:active .secondary,
+a:active .inline {
+    text-decoration: underline;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--tinycade-purple);
+    border-radius: 10px;
+}
+
+.underline {
+    text-decoration: underline;
+}
+#main-nav {
+    position: sticky;
+    z-index: 100;
+    top: 0;
+
+    overflow: hidden;
+
+    width: 100vw;
+    min-height: 56px;
+
+    transition: background-color 300ms ease-in-out;
+    color: white;
+
+    font-size: 1.6rem;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+#nav-logo-link {
+    align-self: flex-start;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-size: inherit;
+
+    /* background-color: var(--tinycade-purple); */
+}
+
+#nav-logo {
+    padding: 0.6rem;
+    margin-left: 1rem;
+
+    height: 1.6rem;    
+
+    background-color: black;
+}
+
+#nav-title {
+    color: white;
+    background-color: var(--tinycade-purple);
+
+    font-size: inherit;
+    font-weight: 700;
+
+    margin: 0.5rem 0.9rem;
+    padding: 0.2rem 0.2rem;
+}
+
+#nav-links {
+    background-color: var(--tinycade-purple);
+    font-size: inherit;
+
+    padding: 0.3rem 1rem;
+}
+
+#nav-links > a {
+    color: white;
+    font-size: inherit;
+    font-style: italic;
+    margin: auto 1.2rem;
+}
+
+#nav-links > a:hover {
+    text-decoration: underline;
+}
+
+nav .activepage {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+nav.dark-scroll {
+    background-color: black;
+    border-bottom: solid white 3px;
+}
+
+nav.dark-scroll > #nav-logo-link,
+nav.dark-scroll > #nav-logo-link > #nav-title,
+nav.dark-scroll > #nav-links {
+    background-color: black;
+}
+footer {
+    background-color: white;
+    color: black;
+
+    border-top: 3px solid var(--tinycade-purple);
+    height: 20vh;
+    min-height: 200px;
+    
+    margin: 0 auto;
+    padding: 20px;
+
+    font-size: 0.8rem;
+
+    display: grid;
+    grid-template-columns:
+        2fr 1fr 1.5fr 1fr 2fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        ". fmenu fcontrib flogos .";
+    column-gap: 2rem;
+}
+
+footer a {
+    color: black;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer h3 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.3rem;
+}
+
+footer > nav {
+    grid-area: fmenu;
+}
+
+footer ul > li {
+    list-style: none;
+}
+
+footer #footer-contributors {
+    grid-area: fcontrib;
+}
+
+#footer-contributors > ul {
+    column-count: 2;
+    column-width: 48%;
+    padding: 0;
+    list-style-type: none;
+}
+
+footer #footer-logos {
+    grid-area: flogos;
+}
+
+#footer-logo-block {
+    display: grid;
+    width: 100%;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "acme atlas" "ucb ucb";
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+footer figure {
+    margin: 0;
+    padding: auto;
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#footer-logos .logo-container {
+    border: 1px solid black;
+    padding: auto 2%;
+
+    width: 100%;
+    height: 100%;
+}
+
+.logo-container img {
+    max-width: 80%;
+    max-height: 90%;
+}
+
+#acmelogo {
+    grid-area: acme;
+}
+
+#atlaslogo {
+    grid-area: atlas;
+}
+
+#ucblogo {
+    grid-area: ucb;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+}
+
+@media only screen and (max-device-width: 320px) {
+    footer {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "fmenu" "fcontrib" "flogos";
+    }
+}
+#home-hero {
+    height: 80vh;
+    width: 100vw;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    display: grid;
+    grid-template-areas: "titular" "scroller";
+}
+
+#home-hero::before {
+    display: block;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    opacity: 0.6;
+}
+
+#hero-container {
+    grid-area: titular;
+
+    max-height: 90%;
+}
+
+.hero-heading {
+    z-index: 12;
+    margin-top: 0;
+    position: relative;
+
+    grid-area: hheading;
+
+    font-weight: 700;
+    font-size: 5rem;
+    line-height: 1em;
+    color: white;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: var(--tinycade-purple);
+
+    max-width: 8em;
+    margin-left: 8%;
+    padding-top: 8%;
+
+    margin-right: 0;
+}
+
+.is-fade {
+    color: transparent;
+    -webkit-text-stroke-color: transparent;
+}
+
+@media only screen and (max-width: 1140px) {
+    .hero-heading {
+        left: 0px;
+    }
+}
+
+.hero-model {
+    max-width: 100%;
+    width: 700px;   
+    z-index: 8;
+
+    position: absolute;
+    right: 0.1vw;
+    top: 5vh;
+
+    margin-left: 5%;
+}
+
+#hero-scroll-prompt {
+    grid-area: scroller;
+
+    margin-right: 40px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: right;
+    color: black;
+    z-index: 12;
+    width: 10em;
+
+    justify-self: right;
+    align-self: end;
+}
+
+.home-section {
+    padding: 2em 4em;
+
+    display: grid;
+
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas:
+        "sheader graphic"
+        "steplist graphic";
+}
+
+.home-section:nth-of-type(odd) {
+    background-color: black;
+    color: white;
+}
+
+.home-section h2 {
+    grid-area: sheader;
+    width: 7em;
+}
+
+.home-section ol {
+    grid-area: steplist;
+    font-family: "Inter", sans-serif;
+}
+
+.home-section ol li::marker {
+    display: block;
+    font-size: 1.5em;
+}
+
+.home-section a:link {
+    text-decoration: underline;
+}
+
+.home-section figure {
+    grid-area: graphic;
+}
+
+.home-section img {
+    width: 100%;
+}
+.instruction-step {
+    background-color: white;
+    padding: 1rem 2em;
+
+    display: grid;
+    grid-template-columns: 1fr 40% 20% 1fr;
+}
+
+.instruction-step:nth-of-type(odd) {
+    background-color: #a4a4a4;
+}
+
+.instruction-step > h3 {
+    grid-column-start: 2;
+    max-width: 60%;
+}
+
+.instruction-step > p {
+    grid-column-start: 2;
+    max-width: 85%;
+
+    font-family: 'Inter', sans-serif;
+}
+
+.instruction-img {
+    width: 300px;
+    grid-column-start: 3;
+
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+/* Components of Instructions page */
+
+/* ts = tools/supplies */
+
+#ts-container {
+    columns: 2;
+
+    color: inherit;
+    background-color: inherit;
+
+    padding-bottom: 3rem;
+    /* margin-bottom: 3rem; */
+}
+
+.ts-item {
+    width: 30%;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 'itimg itdesc' 'itimg itlink';
+}
+
+.ts-item summary {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.ts-item summary::marker {
+    display: none;
+}
+
+.ts-item summary:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.ts-item img {
+    max-width: 30%;
+    
+    grid-area: itimg;
+}
+
+.ts-item > p {
+    font-family: 'Inter', sans-serif;
+    grid-area: itdesc;
+
+    display: inline-block;
+}
+
+.ts-item > a {
+    font-family: 'Inter', sans-serif;
+    grid-area: itlink;
+}
+.featured-game {
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: white;
+
+    height: 100vh;
+}
+
+.featured-game > p {
+    margin-top: 20vh;
+    background-color: black;
+
+    font-family: 'Inter', sans-serif;
+
+    max-width: 20em;
+}
+
+.featured-game > a {
+    background-color: black;
+    color: var(--tinycade-grey);
+}
+
+#game-play-btn {
+    display: block;
+
+    border-radius: 0;
+    border-style: none;
+
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+#help-faq > h2::before {
+    background-color: black;
+}
+
+#help-faq > h2,
+#help-contact > h2 {
+    padding-top: 3rem;
+    margin-left: 7rem;
+}
+
+#faq-qna {
+    columns: 2;
+
+    margin: 0 auto;
+    width: 60%;
+    min-width: 50rem;
+}
+
+#faq-qna > div {
+    display: block;
+    margin: 0.4rem 1rem;
+}
+
+#faq-qna > div > p,
+#faq-qna > div > h3 {
+    font-family: 'Inter', sans-serif;
+}
+
+#help-contact {
+    background-color: black;
+    color: white;
+}
+
+#help-contact > h2::before {
+    background-color: white;
+}
+
+#contact-flex-container {
+    display: flex;
+    flex-flow: column nowrap;
+    flex-basis: auto;
+
+    width: 40%;
+    min-width: 30rem;
+
+    margin: 0 auto;
+}
+
+#help-contact form {
+    border: 1px solid white;
+}
+
+#help-contact-form > label {
+    display: block;
+    margin: 0.6rem 2rem 0;
+
+    font-size: 1.2rem;
+}
+
+#help-contact-form > input,
+#help-contact-form > textarea {
+    margin-left: 2rem;
+    margin-bottom: 0.4rem;
+
+    background-color: black;
+    color: white;
+
+    border-style: none;
+    border-bottom: 2px solid white;
+
+    width: 90%;
+}
+
+#help-contact-form > input#contact-name,
+#help-contact-form > input#contact-lastname {
+    width: 41%;
+}
+
+#contact-send {
+    border-radius: 0;
+    border-style: none;
+    background-color: white;
+
+    margin: 1rem 0;
+    font-size: 1.3rem;
+    
+    align-self: flex-end;
+}
+/*# sourceMappingURL=index.97b8278e.css.map */

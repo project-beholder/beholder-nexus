@@ -1,0 +1,58 @@
+/* https://www.figma.com/file/lHLx6DIUqjd9yDrMOx1efR/Website-src?node-id=301%3A179 */
+
+/* @import "../fonts/inter.css";
+@import "../fonts/space-mono.css"; */
+
+@font-face {
+    font-family: 'Space Mono';
+    src: url("SpaceMono-Regular.e7c9e377.ttf");
+}
+
+:root {
+    --tinycade-purple: #653EDD; /* rgb(101, 62, 221) */
+    --tinycade-grey: #DBDBDB;
+}
+
+*,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'SpaceMono-Regular', monospace;
+    text-decoration: none;
+}
+
+figure {
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+a:link .primary,
+a:link .secondary {
+    text-decoration: none;
+}
+
+a:link .inline {
+    text-decoration: underline;
+}
+
+a:visited .primary,
+a:visited .secondary {
+    text-decoration: none;
+}
+
+a:visited .inline {
+    text-decoration: underline;
+}
+
+a:hover .primary,
+a:hover .secondary,
+a:hover .inline {
+    text-decoration: underline;
+}
+
+a:active .primary,
+a:active .secondary,
+a:active .inline {
+    text-decoration: underline;
+}
+/*# sourceMappingURL=index.4f10849d.css.map */
