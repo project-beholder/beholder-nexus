@@ -53,7 +53,7 @@
         },
         {
             "item": "printer",
-            "description": "",
+            "description": "Used to print the paper markers",
             "image": "",
             "buylink": ""
         }
@@ -63,7 +63,7 @@
             "num": 1,
             "summary": "print out the template",
             "detail": "Download the template file from the link below, and print it out using your printer.",
-            "image": "",
+            "image": "../server_content/tinycade/s01a.webp",
             "link": ""
         },
         {

@@ -1,31 +1,21 @@
 [
     {
         "title": "CLAW",
-        "url": "claw.tinycade.io",
+        "url": "http://claw.tinycade.io",
         "summary": "A classic 2D shooter where you grab other ships and use their weapons as their own",
-        "image": "",
+        "image": "game_claw",
         "controls": [
         ],
         "controller": "link.to/controller/assembly"
     },
     {
         "title": "De Volta",
-        "url": "devolta.tinycade.io",
+        "url": "http://devolta.tinycade.io",
         "summary": "A space hopping game where you must avoid past versions of your self on your way home",
-        "image": "",
+        "image": "game_devolta",
         "controls": [
             ""
         ],
         "controller": ""
     },
-    {
-        "title": "",
-        "url": "",
-        "summary": "",
-        "image": "",
-        "controls": [
-            ""
-        ],
-        "controller": ""
-    }
 ]
