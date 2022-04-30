@@ -1,0 +1,33 @@
+{
+    "CONTROLLER NAME OR OTHER IDENTIFIER": {
+        "supplies": [
+            {
+                "item": "",
+                "description": "",
+                "image": "",
+                "buylink": ""
+            }
+        ],
+        "tools": [
+            {
+                "item": "",
+                "description": "",
+                "image": "",
+                "buylink": ""
+            }
+        ],
+        "steps": [
+            {
+                "num": 1,
+                "summary": "",
+                "detail": "",
+                "image": "",
+                "link": ""
+            }
+        ],
+        "games": [
+            "GAME NAME THAT USES THIS CONTROLLER",
+            "GAME NAME"
+        ]
+    }
+}

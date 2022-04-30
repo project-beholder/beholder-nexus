@@ -1,6 +1,6 @@
 @import url('./universal.css');
 
-#featured-game {
+.featured-game {
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -9,10 +9,18 @@
     height: 100vh;
 }
 
-#featured-game > p {
+.featured-game > p {
     margin-top: 20vh;
     background-color: black;
+
     font-family: 'Inter', sans-serif;
+
+    max-width: 20em;
+}
+
+.featured-game > a {
+    background-color: black;
+    color: var(--tinycade-grey);
 }
 
 #game-play-btn {

@@ -5,7 +5,6 @@ import placeholder from '../assets/placeholder.jpg';
 import '../css/instructions.css';
 
 class InstructionStep extends React.Component {
-
     render() {
         return (
             <section className='instruction-step'> 
@@ -13,8 +12,9 @@ class InstructionStep extends React.Component {
                 <p>{ this.props.insdetail }</p>
                 {this.props.extralink != '' ? <p><a href={this.props.extralink}>Referenced link</a></p> : null}
 
-                {/* <img className='instruction-img' src={this.props.insimg} alt='placeholder image' /> */}
-                <img className='instruction-img' src={placeholder} alt='placeholder image' />
+                <img className='instruction-img' src={`url(${this.props.insimg})`} alt='placeholder image' />
+                <img className='instruction-img' src={this.props.insimg} alt='placeholder image' />
+                {/* <img className='instruction-img' src={placeholder} alt='placeholder image' /> */}
             </section>
         )
     };

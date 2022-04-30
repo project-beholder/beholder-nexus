@@ -1,0 +1,142 @@
+{
+    "assembly": "tinycade",
+    "supplies": [
+        {
+            "item": "cardboard",
+            "description": "test - cardboard",
+            "image": "",
+            "buylink": ""
+        },
+        {
+            "item": "2x small craft mirrors",
+            "description": "",
+            "image": "",
+            "buylink": ""
+        },
+        {
+            "item": "smart phone",
+            "description": "",
+            "image": "",
+            "buylink": ""
+        }        
+    ],
+    "tools": [
+        {
+            "item": "hot glue gun",
+            "description": "",
+            "image": "",
+            "buylink": ""
+        },
+        {
+            "item": "exact-o knife",
+            "description": "A knife for cutting cardboard in a straight line",
+            "image": "",
+            "buylink": ""
+        },
+        {
+            "item": "cutting mat",
+            "description": "",
+            "image": "",
+            "buylink": ""
+        },
+        {
+            "item": "scissors",
+            "description": "",
+            "image": "",
+            "buylink": ""
+        },
+        {
+            "item": "ruler",
+            "description": "",
+            "image": "",
+            "buylink": ""
+        },
+        {
+            "item": "printer",
+            "description": "Used to print the paper markers",
+            "image": "",
+            "buylink": ""
+        }
+    ],
+    "steps": [
+        {
+            "num": 1,
+            "summary": "print out the template",
+            "detail": "Download the template file from the link below, and print it out using your printer.",
+            "image": "../../../server/content/tinycade/s01a.webp",
+            "link": ""
+        },
+        {
+            "num": 2,
+            "summary": "cut out the template",
+            "detail": "Once you have printed the template out, cut out the separate pieces using scissors. Keep the paper templates as a reference. It will help you keep track of which piece is which, and also has guides for where to place the mirrors.",
+            "image": "",
+            "link": ""
+        },
+        {
+            "num": 3,
+            "summary": "attach the cutouts to the cardboard",
+            "detail": "Use some double-sided tape, or glue, to attach the paper cutouts to your cardboard. Make sure to pay attention to how many of each piece you need, and allow yourself enough cardboard to comfortably cut out each piece.",
+            "image": "",
+            "link": ""
+        },
+        {
+            "num": 4,
+            "summary": "cut out the cardboard",
+            "detail": "Once you have all your template pieces cut out, get your exact-o knife and cutting mat and start to cut out your cardboard pieces. Again, make sure you cut out the right number of pieces and keep track of which is which. It can help to copy the letter labels (A, B, C, etc.) onto the cardboard once it is cut out.",
+            "image": "",
+            "link": ""
+        },
+        {
+            "num": 5,
+            "summary": "assemble the mirrors",
+            "detail": "This step is fairly straightforward. You need to fle the mirrors onto their support piece. The label is 'I'. Set these aside for later. Once your box is assembled you will be able to easily slide these pieces in and out.",
+            "image": "",
+            "link": ""
+        },
+        {
+            "num": 6,
+            "summary": "assemble the 2 large side pieces",
+            "detail": "Now we will start our assembly for the box. Take the 2 large side pieces, and also grab the 2 sets of support pieces. One set should be labeled 'J' and the other 'K'. It helps to trace the template onto both side pieces. This way you can be accurate with your placement of the support pieces. Folliowing the placement guide on the paper template, glue in the hooked 'K' piece and the lower 'J' piece onto each large side piece. You should end up with 2 mirrored side pieces once you're done.",
+            "image": "",
+            "link": ""
+        },
+        {
+            "num": 7,
+            "summary": "assemble the control panel placement",
+            "detail": "You should have 3 pieces laveled F, F2, and F3. These are all a part of what will become the control panel. For now, grab the F and F2 pieces and glue them together as seen in the images here. These are what will hold the F3 piece after your control panel is assembled. Set the F3 piece aside for later; you will use this to create a separate control panel.",
+            "image": "",
+            "link": ""
+        },
+        {
+            "num": 8,
+            "summary": "assemble the box (quick note)",
+            "detail": "Before you begin assembling the box, it's important to pay attention to how it gets assembled. All the middle pieces should be flued IN-BETWEEN the 2 side pieces, not on top of them. Overall, this makes it easier for you to assemble the box.",
+            "image": "",
+            "link": ""
+        },
+        {
+            "num": 9,
+            "summary": "assemble the box",
+            "detail": "Following the paper template guide, start to glue on each piece in order. We like to start with one big side piece and glue the other smaller pieces on top of it, ending the contruction by placeing the other big side on top of everything. Make sure that you are paying attention to the labels and gluing each piece on in the correct place. Once the glue is all dry, you should have the frame for your Tinycade constructed. Congratulations!",
+            "image": "",
+            "link": ""
+        },
+        {
+            "num": 10,
+            "summary": "insert the mirrors",
+            "detail": "For the final step, insert your two mirror placements into your Tinycade. The paper template has visuals for where the mirrors should go. If you measured and cut correctly, the mirrors should slide in snugly and sit right on top of the supports.",
+            "image": "",
+            "link": ""
+        },
+        {
+            "num": 11,
+            "summary": "Finished!",
+            "detail": "You should have your arcade cabinet all assembled now! If you are missing a game and a control panel, check out your options by following the link below.",
+            "image": "",
+            "link": ""
+        }
+    ]
+
+
+}

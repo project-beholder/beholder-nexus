@@ -35,8 +35,14 @@
 /* Components of Instructions page */
 /* ts = tools/supplies */
 
-.ts-section {
+#ts-container {
     columns: 2;
+
+    color: inherit;
+    background-color: inherit;
+
+    padding-bottom: 3rem;
+    /* margin-bottom: 3rem; */
 }
 
 .ts-item {
