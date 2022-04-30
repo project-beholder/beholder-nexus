@@ -1,0 +1,147 @@
+footer {
+    background-color: #ffffff;
+    border-top: 3px solid #653EDD;
+    color: black;
+    height: 400px;
+  
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+  
+  footer a {
+    color: #000000;
+  }
+  
+  /* #footer-content {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    /* column-width: 30%;
+  } */
+  
+  .footer-link {
+    font-family: Space Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 36px;
+  }
+  
+  footer h3 {
+    font-family: Space Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 36px;
+  }
+  
+  #footer-menus, #footer-contributors, #footer-logos {
+    width: 30%;
+  }
+  
+  #footer-contributors {
+    margin-top: 60px;
+    columns: 2;
+  }
+  
+  .footer-logo-link {
+    margin-top: -6px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 56px;
+  }
+  
+  .footer-logo-link:hover {
+    text-decoration: none;
+  }
+  
+  .footer-title {
+    color: #000;
+    font-weight: 700;
+    font-family: Space Mono;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 36px;
+  }
+  
+  .footer-logo {
+    /* background: #fff; */
+    width: 60px;
+    margin-right: 15px;
+    /* vertical-align: top; */
+  }
+  
+  .footer-logo > img {
+    margin-top: 14px;
+    margin-left: 11px;
+    fill: #000;
+  }
+  
+  .footer-menu-link {
+    font-family: Space Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+    display: block;
+  }
+/* https://www.figma.com/file/lHLx6DIUqjd9yDrMOx1efR/Website-src?node-id=301%3A179 */
+
+/* @import "../fonts/inter.css";
+@import "../fonts/space-mono.css"; */
+
+@font-face {
+    font-family: 'Space Mono';
+    src: url("SpaceMono-Regular.e7c9e377.ttf");
+}
+
+:root {
+    --tinycade-purple: #653EDD; /* rgb(101, 62, 221) */
+    --tinycade-grey: #DBDBDB;
+}
+
+*,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'SpaceMono-Regular', monospace;
+    text-decoration: none;
+}
+
+figure {
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+a:link .primary,
+a:link .secondary {
+    text-decoration: none;
+}
+
+a:link .inline {
+    text-decoration: underline;
+}
+
+a:visited .primary,
+a:visited .secondary {
+    text-decoration: none;
+}
+
+a:visited .inline {
+    text-decoration: underline;
+}
+
+a:hover .primary,
+a:hover .secondary,
+a:hover .inline {
+    text-decoration: underline;
+}
+
+a:active .primary,
+a:active .secondary,
+a:active .inline {
+    text-decoration: underline;
+}
+/*# sourceMappingURL=index.7d17c51a.css.map */
