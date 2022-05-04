@@ -3,6 +3,7 @@
   "source": "./src/index.html",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://project-beholder.github.io/beholder-nexus/",
   "scripts": {
     "start": "parcel --no-cache",
     "build": "parcel build",
